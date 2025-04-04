@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        const inputElement = document.querySelector("input");
+        const btnElement = document.querySelector("button");
+        const ulElement = document.querySelector("ul");
+        btnElement.addEventListener("click", (e) => {
+            const value = inputElement.value;
+            inputElement.value = '';
+            const liElement = document.createElement("li");
+            const spanElement = document.createElement("span");
+            const delBtnElement = document.createElement("button");
+            liElement.appendChild(spanElement);
+            liElement.appendChild(delBtnElement);
+            spanElement.textContent = value;
+            delBtnElement.textContent = "Delete Item";
+            ulElement.appendChild(liElement);
+            // console.log(delBtnElement);
+            delBtnElement.addEventListener("click", () => {
+                liElement.remove();
+            })
+            inputElement.focus();
+            console.log("Bubbles?", e.bubbles);
+            console.log("Cancelable?", e.cancelable);
+            console.log("Default prevented?", e.defaultPrevented);
+            console.log("Current Target:", e.currentTarget);
+        })
+
+    </script>
+</body>
+
+</html>

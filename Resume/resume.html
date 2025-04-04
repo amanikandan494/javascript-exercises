@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Resume</title>
+    <link href="resume.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div id="content" class="resume-container">
+        <div class="main-container">
+            <div class="main-right-container">
+                <div class="profile-picture">
+                    <img src="./public/resumepicturewhite.png" alt="ProfilePhoto">
+                </div>
+                <div class="main-right-container-item">
+                    <div class="right-container-title"> Skills</div>
+                    <div class="right-container-content-skills">
+                        <div>React JS</div>
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>Javascript</div>
+                        <div>Typescript</div>
+                        <div>Jest</div>
+                        <div>GraphQL</div>
+                        <div>Sharepoint Framework</div>
+                        <div>AWS Lambdas</div>
+                        <div>Swagger</div>
+                    </div>
+                </div>
+                <div class="main-right-container-item">
+                    <div class="right-container-title"> Tools Used</div>
+                    <div class="right-container-content">
+                        <div>Visual Studio Code</div>
+                        <div>Postman</div>
+                        <div>GitHub</div>
+                        <div>Azure Repos</div>
+                        <div>SonarQube</div>
+                    </div>
+                </div>
+                <div class="main-right-container-item">
+                    <div class="right-container-title"> Languages</div>
+                    <div class="right-container-languages">
+                        <div>
+                            <div>English</div>
+                            <div class="stars">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Hindi</div>
+                            <div class="stars">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Malayalam</div>
+                            <div class="stars">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Tamil</div>
+                            <div class="stars">
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star filled"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-right-container-item">
+                    <div class="right-container-title"> Interests and Hobbies</div>
+                    <div class="right-container-content">
+                        <div>
+                            <div>Reading</div>
+                            <span><img src="./public/readingIcon.png" alt="readinglogo" class="logo-image">
+                            </span>
+                        </div>
+                        <div>
+                            <div>Prose Writing</div>
+                            <span><img src="./public/prosewritingicon.png" alt="readinglogo" class="logo-image">
+                            </span>
+                        </div>
+                        <div>
+                            <div>Sketching</div>
+                            <span><img src="./public/sketching.png" alt="readinglogo" class="logo-image">
+                            </span>
+                        </div>
+                        <div>
+                            <div>Travelling</div>
+                            <span><img src="./public/travellingicon.png" alt="readinglogo" class="logo-image">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-left-container">
+                <div class="main-left-container-item">
+                    <div class="personal-section">
+                        <h1>Anish Manikandan </h1>
+                        <h4>Front End Developer</h4>
+                        <p class="header-summary">
+                            Dedicated and ambitious software developer with a passion for problem solving. Highly
+                            adaptable, committed to continuous learning and skilled at approaching problems from
+                            multiple perspectives.
+                        </p>
+                        <div class="contact-details">
+                            <p class="contact-details-item">
+                                <span><img src="./public/locationimage.png" alt="locationlogo" class="logo-image"
+                                        style="filter: grayscale(100%);"></span>
+                                Mysore
+                            </p>
+                            <p class="contact-details-item">
+                                <span><img src="./public/emailIcon.png" alt="emaillogo" class="logo-image"
+                                        style="filter: grayscale(100%);"></span>
+                                amanikandan494@gmail.com
+                            </p>
+                            <p class="contact-details-item">
+                                <span><img src="./public/phonelogo.png" alt="phonelogo" class="logo-image"></span>
+                                +918921561825
+                            </p>
+                            <!-- <p class="contact-details-item">
+                                <a class="contact-details-link" href="https://www.linkedin.com/in/anish-manikandan/"
+                                    target="_blank" rel=”noopener noreferrer”>
+                                    <span><img src="./public/linkedinimage.png" alt="locationlogo"
+                                            class="logo-image"></span>
+                                </a>
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="main-left-container-item">
+                    <div class="left-container-title">Professional Experience</div>
+                    <div class="left-container-item">
+                        <div class="designation">Senior Systems Engineer</div>
+                        <div class="institute">Infosys</div>
+                        <div class="sub-details">
+                            <div class="period"><img src="./public/calendarlogo.png" alt="periodlogo"
+                                    class="period-logo">May 2021-present</div>
+                            <div class="location"><img src="./public/locationlogo.png" alt="locationlogo"
+                                    class="location-logo">Mysuru,India</div>
+                        </div>
+                        <ul class="experience-list">
+                            <li class="experience-list-item"><strong>Developed Front-End Modules:</strong> Contributed
+                                to a commercetools project by designing and
+                                implementing front-end modules using React, seamlessly integrating them into the
+                                merchant center for enhanced user experience.</li>
+                            <li class="experience-list-item"><strong> GraphQL Integration:</strong> Utilized
+                                commercetools' GraphQL API to efficiently retrieve
+                                essential data from REST APIs, ensuring robust data management through well-defined
+                                schemas.</li>
+                            <li class="experience-list-item"><strong>AWS Lambda Functions:</strong> Engineered and
+                                deployed serverless applications using Node.js,
+                                creating Lambda functions hosted on AWS to streamline backend processes.</li>
+                            <li class="experience-list-item"> <strong>SharePoint Framework Development:</strong>
+                                Designed and developed dynamic web pages within the
+                                SharePoint framework using React and TypeScript, enhancing collaboration and content
+                                management.</li>
+                            <li class="experience-list-item"><strong>Code Refactoring for Quality
+                                    Improvement:</strong>Refactored existing codebases, resulting in a
+                                40% reduction in code issues as identified by SonarQube scans, thereby elevating overall
+                                code quality.</li>
+                            <li class="experience-list-item"><strong>Unit Testing with Jest:</strong> Authored
+                                comprehensive unit tests
+                                in Jest for both React and
+                                Node.js applications, ensuring high code coverage and validating functionality through
+                                design principles.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-left-container-item">
+                    <div class="left-container-title">Education</div>
+                    <ul class="education-list">
+                        <li class="education-list-item">
+                            <div class="left-container-item">
+                                <div class="designation">Master of Technology in Engineering Design</div>
+                                <div class="institute">Amrita Vishwa Vidyapeetham,</div>
+                                <div class="sub-details">
+                                    <div class="period"><img src="./public/calendarlogo.png" alt="periodlogo"
+                                            class="period-logo">2018-2020</div>
+                                    <div class="location"><img src="./public/locationlogo.png" alt="locationlogo"
+                                            class="location-logo">Coimbatore,India</div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="education-list-item">
+                            <div class="left-container-item">
+                                <div class="designation">Bachelor of Engineering in Mechanical Engineering</div>
+                                <div class="institute">VSB College of Engineering Technical Campus, Anna University
+                                </div>
+                                <div class="sub-details">
+                                    <div class="period"><img src="./public/calendarlogo.png" alt="periodlogo"
+                                            class="period-logo">2012-2016</div>
+                                    <div class="location"><img src="./public/locationlogo.png" alt="locationlogo"
+                                            class="location-logo">Coimbatore,India</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="generatePDF()">Download PDF</button>
+    <script>
+        async function generatePDF() {
+            // Import jsPDF
+            const elementHTML = document.getElementById("content");
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({
+                orientation: 'portrait',
+                unit: 'px',
+                format: 'a4' // You can also specify custom dimensions here if needed
+            });
+
+            // Get the HTML content
+
+
+            // Convert HTML to PDF
+            html2canvas(elementHTML, {
+                useCORS: true, // Allow cross-origin images
+                scale: 2 // Increase scale for better resolution
+            }).then((canvas) => {
+                const imgData = canvas.toDataURL("image/png");
+                // Add the image to the PDF
+                doc.addImage(imgData, "PNG", 0, 0, doc.internal.pageSize.getWidth(), doc.internal.pageSize.getHeight());
+                // Save the generated PDF
+                doc.save("anishresume.pdf");
+            });
+        }
+    </script>
+</body>
+
+</html>
